@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-postgres-app-pod
+  labels:
+    name: my-postgres-app-pod
+    group: example
+spec:
+  containers:
+    - name: postgres
+      image: postgres
+      ports:
+              - containerPort: 5432
